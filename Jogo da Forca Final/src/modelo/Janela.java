@@ -28,7 +28,7 @@ public class Janela extends JanelaPartida{
 		janela.getContentPane().setLayout(null);
 		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		janela.setLocationRelativeTo(null);
-		janela.setIconImage(Toolkit.getDefaultToolkit().getImage("/Ícone/Boneco.png"));
+		janela.setIconImage(Toolkit.getDefaultToolkit().getImage(Janela.class.getResource("/imagens/Ícone.png")));
 		janela.setResizable(false);
 		janela.setSize(650,650);
 
