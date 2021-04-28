@@ -1,9 +1,12 @@
 package modelo;
 
-public class Principal {
-/* O programa possui um erro na impressão do boneco
- * e na finalização das partidas. Ainda está incompleto
-*/
+/**
+ * Essa classe possui executa o programa.
+ * @author matheushenrick
+ * @version 1.0
+ */
+public class Main {
+
 	public static void main(String[] args) {
 		new Janela();
 	}

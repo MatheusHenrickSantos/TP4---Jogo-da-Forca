@@ -1,5 +1,12 @@
 package lista;
 
+/**
+ * Essa classe possui a lista de todas as palavras utilizadas no jogo separadas por tema
+ * além de métodos que recebem um número aleatório e retornam uma palavra nessa posição
+ * e métodos que retornam o vetor inteiro para que seja calculado o seu tamanho.
+ * @author matheushenrick
+ * @version 1.5
+ */
 public class ListaDePalavras {
 	private String cidades[] = {"HONG KONG","BANGKOK","LONDRES","SINGAPURA","MACAO","PARIS","DUBAI","NOVA YORK",
 								"KUALA LUMPUR","SHENZHEN","ISTAMBUL","DÉLI","TÓQUIO","ROMA","MUMBAI","PRAGA",
@@ -21,7 +28,7 @@ public class ListaDePalavras {
 								"SRI LANKA","BURKINA FASSO","ROMÊNIA","CHILE","ZÂMBIA","SÍRIA","EQUADOR","HOLANDA",
 								"GUATEMALA","SENAGAL","SOMÁLIA","CAMBOJA","TUNISIA","HAITI","BOLÍVIA","BÉLGICA",
 								"CUBA","GRÉCIA","JORDÂNIA","REPÚBLICA DOMINICANA","SUÉCIA","PORTUGAL","HUNGRIA",
-								"HONDURAS","AUSTRIA","SUÍÇA","PARAGUAI","SÉVIA","BULGÁRIA","LÍBANO","NICARÁGUA",
+								"HONDURAS","AUSTRIA","SUÍÇA","PARAGUAI","SÉRVIA","BULGÁRIA","LÍBANO","NICARÁGUA",
 								"DINAMARCA","FINLÂNDIA","ESLOVÁQUIA","NORUEGA","COSTA RICA","NOVA ZELÂNDIA",
 								"PANAMÁ","CROÁCIA","GEÓRGIA","URUGUAI","ARMÊNIA","ALBÂNIA","LITUÂNIA","CATAR",
 								"JAMAICA","ESLOVÊNIA","BAHREIN","ANDORRA"};
@@ -43,7 +50,7 @@ public class ListaDePalavras {
 	private String filmes[] = {"UM SONHO DE LIBERDADE","O CAVALEIRO DAS TREVAS","A LISTA DE SCHINDLER","O SENHOR DOS ANÉIS",
 								"STAR WARS","MATRIX","OS SETE SAMURAIS","CIDADE DE DEUS","O SILÊNCIO DOS INOCENTES","A VIDA É BELA",
 								"OS SUSPEITOS","O RESGATE DO SOLDADO RYAN","A VIAGEM DE CHIHIRO","À ESPERA DE UM MILAGRE",
-								"CASABLANCA","INTOCÁVEIS","OS TEMPOS MODERNOS","INDIANA JONES","O EXTERMINADOR DO FUTURO",
+								"CASABLANCA","INTOCÁVEIS","TEMPOS MODERNOS","INDIANA JONES","O EXTERMINADOR DO FUTURO",
 								"DE VOLTA PARA O FUTURO","GLADIADOR","O REI LEÃO","APOCALYPTO","O GRANDE DITADOR","CREPÚSCULO DOS DEUSES",
 								"WALL-E","ALIENS","VALENTE","LARANJA MECÂNICA","CANTANDO NA CHUVA","TOY STORY","GOLPE DE MESTRE",
 								"GÊNIO INDOMÁVEL","BATMAN BEGINS","DURO DE MATAR","DIVERTIDA MENTE","E O VENTO LEVOU","AURORA",

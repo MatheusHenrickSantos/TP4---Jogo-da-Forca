@@ -9,14 +9,19 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.Cursor;
 
-public class JanelaInicio {
-	private JPanel painel;
+/**
+ * Essa classe constrói a tela inicial e define a aparência dela
+ * @author matheushenrick
+ * @version 1.1
+ */
+
+@SuppressWarnings("serial")
+public class Inicio extends JPanel{
 	private JButton iniciar;
 	private JButton sair;
 	private JLabel imagemFundo;
 	
-	public JanelaInicio() {
-		painel = new JPanel();
+	public Inicio() {
 		iniciar = new JButton("Iniciar");
 		sair = new JButton("X");
 		imagemFundo = new JLabel();
@@ -24,11 +29,11 @@ public class JanelaInicio {
 		iniciar.setBounds(257, 243, 135, 34);
 		sair.setBounds(296, 312, 58, 58);
 		
-		painel.setBackground(new Color(20,20,20));
-		painel.setLayout(null);
+		setBackground(new Color(20,20,20));
+		setLayout(null);
 
 		imagemFundo.setBounds(12, 0, 626, 598);
-		imagemFundo.setIcon(new ImageIcon(JanelaInicio.class.getResource("/imagens/476bf8d5e39bb0612a79933c75907a4a.jpg")));
+		imagemFundo.setIcon(new ImageIcon(Inicio.class.getResource("/imagens/476bf8d5e39bb0612a79933c75907a4a.jpg")));
 		imagemFundo.setHorizontalAlignment(SwingConstants.CENTER);
 		
 		iniciar.setBackground(new Color(0,0,0,0));
@@ -37,7 +42,7 @@ public class JanelaInicio {
 		iniciar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		iniciar.setFocusable(false);
 		iniciar.setFont(new Font("DriftType", Font.BOLD, 24));
-		iniciar.setForeground(new Color(67,46,28));
+		iniciar.setForeground(new Color(41,24,13));
 		iniciar.setHorizontalTextPosition(SwingConstants.CENTER);
 
 		sair.setBackground(new Color(0,0,0,0));
@@ -46,12 +51,12 @@ public class JanelaInicio {
 		sair.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		sair.setFocusable(false);
 		sair.setFont(new Font("DriftType", Font.BOLD, 30));
-		sair.setForeground(new Color(67,46,28));
+		sair.setForeground(new Color(41,24,13));
 		sair.setHorizontalTextPosition(SwingConstants.CENTER);
 		
-		painel.add(iniciar);
-		painel.add(sair);
-		painel.add(imagemFundo);   
+		add(iniciar);
+		add(sair);
+		add(imagemFundo);   
 	}
 	
 	public JButton getIniciar() {
@@ -60,9 +65,5 @@ public class JanelaInicio {
 
 	public JButton getSair() {
 		return sair;
-	}
-
-	public JPanel getPainel() {
-		return painel;
 	}
 }
