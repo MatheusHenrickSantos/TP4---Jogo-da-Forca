@@ -1,36 +1,43 @@
 package modelo;
 
 import javax.swing.JLabel;
-import javax.swing.JPanel;
-import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
 
-public class Boneco {
-	private JPanel painel;
-	private JLabel boneco;
+/**
+ * Essa classe constrói um boneco a partir das imagens que criei no gimp.
+ * @author matheushenrick
+ * @version 2.0
+ */
+
+@SuppressWarnings("serial")
+public class Boneco extends JLabel{
 	
 	public Boneco() {
-		painel = new JPanel();
-		boneco = new JLabel();
-		painel.setSize(650,610);
-
-		painel.setLayout(null);
-		painel.setLocation(0, 0);
-		painel.setBackground(new Color(0,0,0,0));
-
-		boneco.setBounds(430, 0, 132, 246);
-		boneco.setHorizontalAlignment(SwingConstants.CENTER);
-		boneco.setIcon(new ImageIcon(Boneco.class.getResource("/imagens/Boneco.png")));
-		
-		painel.add(boneco);
+		setBounds(430, 0, 132, 246);
+		setHorizontalAlignment(SwingConstants.CENTER);
+		setIcon(new ImageIcon(Boneco.class.getResource("/imagens/Boneco.png")));
 	}
-
-	public JLabel getBoneco() {
-		return boneco;
-	}
-
-	public JPanel getPainel() {
-		return painel;
+	
+	/**
+	 * Este método realiza a troca das imagens que compõem o boneco. Quando o erro
+	 * for igual a 4 o boneco retorna ao estado inicial.
+	 * @param countErro
+	 */
+	public void atualizaBoneco(int countErro) {
+		switch(countErro) {
+		case 1:
+			setIcon(new ImageIcon(Boneco.class.getResource("/imagens/Pernas.png")));
+			break;
+		case 2:
+			setIcon(new ImageIcon(Boneco.class.getResource("/imagens/Braços.png")));
+			break;
+		case 3:
+			setIcon(new ImageIcon(Boneco.class.getResource("/imagens/Tronco.png")));
+			break;
+		case 4:
+			setIcon(new ImageIcon(Boneco.class.getResource("/imagens/Boneco.png")));
+			break;
+		}
 	}
 }
